@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #c5e4d7;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.overlay {
+  background: linear-gradient(transparent, #056a23 58%);
+  width: fit-content;
+  height: 0px;
+  color: rgb(238, 238, 238);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.box {
+  position: relative;
+}
+
+.box:hover img {
+  transform: scale(1.2);
+}
+.box:hover .overlay {
+  height: 100%;
+}
+
+.under-footer {
+  background-color: #007051;
+  height: 250px;
+}
